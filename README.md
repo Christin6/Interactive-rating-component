@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution](https://github.com/Christin6/Interactive-rating-component)
+- Live Site URL: [Interactive Rating Component](https://christin6.github.io/Interactive-rating-component/)
 
 ## My process
 
@@ -50,4 +50,4 @@ I want to add cookies in this kind of projects so user could only rate once. Ani
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@Christin6](https://www.frontendmentor.io/profile/Christin6)

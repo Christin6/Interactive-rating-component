@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Screenshot
 
-![rating page screenshot](./screenshot/Screenshot.png)
+![rating page screenshot](./Screenshot/Screenshot.png)
 ![thank you page screenshot](/Screenshot/Screenshot2.png)
 
 ### Links

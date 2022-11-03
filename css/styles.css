@@ -1,0 +1,166 @@
+/* 
+TABLE OF CONTENT
+————————————————
+1. IMPORT FONT
+2. RESET
+3. COLORS & FONT SETTING
+4. HTML AND GENERAL LAYOUT (article)
+5. GENERAL TEXTS (h1, p)
+6. FORM
+*/
+
+/* IMPORT FONT */
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* COLORS & FONT SETTING */
+:root {
+    --orange: hsl(25, 97%, 53%);
+    --white: hsl(0, 0%, 100%);
+    --light-grey: hsl(217, 12%, 63%);
+    --medium-grey: hsl(216, 12%, 54%);
+    --dark-grey: hsl(218, 9%, 24%);
+    --dark-blue: hsl(213, 19%, 18%);
+    --very-dark-blue: hsl(216, 12%, 8%);
+
+    --font-family-default: 'Overpass', sans-serif;
+    --font-size-default: 15px;
+    /* Weights to use: 400 and 700 */
+}
+
+/* HTML AND GENERAL LAYOUT (article) */
+html {
+    background-color: var(--very-dark-blue);
+
+    font-family: var(--font-family-default);
+    font-size: var(--font-size-default);
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+}
+
+article {
+    background-color: var(--dark-blue);
+    border-radius: 1.8rem;
+
+    padding: 2rem 1.7rem;
+    width: 23rem;
+}
+
+/* ICON */
+.icon {
+    background-color: var(--dark-grey);
+
+    padding: 0.8rem;
+    margin: 0.5rem 0rem 1.8rem 0rem;
+    border-radius: 50%;
+}
+
+/* GENERAL TEXTS (h1, p) */
+h1 {
+    margin-bottom: 0.6rem;
+}
+
+p, input[type=radio] {
+    margin-bottom: 1.8rem;
+}
+
+h1 {
+    color: var(--white);
+}
+
+p {
+    color: var(--light-grey);
+}
+
+/* FORM */
+.rating-input {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    color: var(--light-grey);
+    text-indent: -2.7rem;
+    line-height: 2.8rem;
+}
+
+input[type=radio] {
+    height: 2.8rem;
+    width: 2.8rem;
+
+    /* disable default apearance */
+    appearance: none;
+    /* appearance styling starts */
+    background-color: var(--dark-grey);
+    border-radius: 50%;
+}
+
+input[type=radio]:hover, 
+input[type=radio]:hover + .rate-label {
+    background-color: var(--medium-grey);
+    color: var(--white);
+}
+
+input[type=radio]:checked, 
+input[type=radio]:checked + .rate-label {
+    background-color: var(--orange);
+    color: var(--white);
+}
+
+input[type=button] {
+    width: 100%;
+    padding: 0.8rem;
+
+    font-family: var(--font-family-default);
+    color: var(--white);
+    background-color: var(--orange);
+
+    border-radius: 20px;
+    border: none;
+}
+
+input[type=button]:hover {
+    background-color: var(--white);
+    color: var(--orange);
+}
+
+/* THANK YOU CARD */
+article#ty-state {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#ty-state > img {
+    margin-top: 1.8rem;
+}
+
+article#ty-state > p,
+article#ty-state > h1 {
+    text-align: center;
+}
+
+#ty-state > p.rating-text {
+    color: var(--orange);
+    border-radius: 25px;
+
+    margin-top: 1.8rem;
+    padding: 0.3rem 1.2rem;
+    background-color: var(--dark-grey);
+}
